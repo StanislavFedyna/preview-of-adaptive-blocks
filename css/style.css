@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+
+}
+
+.section {
+  background: #cf6a87;
+  color: #ffffff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  perspective: 1000px;
+}
+
+.heading {
+  margin-left: 65%;
+  font-size: 2.5em;
+
+
+}
+
+.phone,
+.tablet,
+.desktop {
+  background: #fff;
+  position: absolute;
+  box-shadow: 13px 13px 32px 0 rgba(242, 57, 90, 0.3);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transform: translateY(135%) rotateY(-500deg) rotateZ(20deg);
+  -webkit-transform: translateY(135%) rotateY(-500deg) rotateZ(20deg);
+  -moz-transform: translateY(135%) rotateY(-500deg) rotateZ(20deg);
+  -ms-transform: translateY(135%) rotateY(-500deg) rotateZ(20deg);
+  -o-transform: translateY(135%) rotateY(-500deg) rotateZ(20deg);
+}
+
+.section:hover .phone,
+.section:hover .tablet,
+.section:hover .desktop {
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+}
+
+
+.phone {
+  width: 200px;
+  height: 280px;
+  bottom: 0;
+  left: 5%;
+  background: #fff url("http://jquerykiller.ru/img/mobile.svg") center no-repeat;
+  z-index: 3;
+  transition-delay: 0.2s;
+}
+
+.tablet {
+  width: 360px;
+  height: 380px;
+  bottom: 0;
+  left: 10%;
+  z-index: 1;
+  background: #fff url("http://jquerykiller.ru/img/tablet.svg") center no-repeat;
+  transition-delay: 0.4s;
+}
+
+.desktop {
+  width: 680px;
+  height: 480px;
+  bottom: 0;
+  left: 15%;
+  background: #fff url("http://jquerykiller.ru/img/desktop.svg") center no-repeat;
+  transition-delay: 0.6s;
+
+}
