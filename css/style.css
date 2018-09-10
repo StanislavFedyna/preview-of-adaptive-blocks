@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Oswald', sans-serif;
   overflow: hidden;
 
 }
@@ -18,8 +18,8 @@ body {
 }
 
 .heading {
-  margin-left: 65%;
-  font-size: 2.5em;
+  margin-left: 61%;
+  font-size: 3.5em;
 
 
 }
